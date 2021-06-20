@@ -39,7 +39,7 @@ const Header = () => {
           <Divider />
 
          
-            <Typography variant="h2" align="center" color="inherit" gutterBottom>
+            <Typography variant="h3" align="center" color="inherit" gutterBottom>
               Blue Berry
             </Typography>
 
