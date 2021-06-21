@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Divider, Toolbar, IconButton, Badge, makeStyles, Button } from '@material-ui/core'
+import { Typography, Divider, Toolbar, IconButton, Badge, makeStyles, Button, Grid } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import HomeIcon from '@material-ui/icons/Home';
@@ -55,12 +55,13 @@ const Header = () => {
             </Typography>
             
 
-            <div className="btn">
+            <Grid container direction="column" alignItems="center" justify="center">
+            
             <Button variant="contained" size="large">
               Our Services
             </Button>
 
-            </div>
+            </Grid>
           
             
 
