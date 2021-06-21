@@ -28,7 +28,7 @@ const Header = () => {
               <MenuIcon />
           </IconButton>
             <Typography className={classes.title}>
-            
+            Blue Berry
           </Typography>
           <IconButton color="inherit">
               <HomeIcon />
