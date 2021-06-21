@@ -56,8 +56,8 @@ const Header = () => {
             
 
             <Grid container direction="column" alignItems="center" justify="center">
-            
-            <Button variant="contained" size="large">
+
+            <Button variant="contained" size="large" color="primary">
               Our Services
             </Button>
 
