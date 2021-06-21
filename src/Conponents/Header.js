@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Divider, Toolbar, IconButton, Badge, makeStyles } from '@material-ui/core'
+import { Typography, Divider, Toolbar, IconButton, Badge, makeStyles, Button } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import HomeIcon from '@material-ui/icons/Home';
@@ -9,6 +9,12 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
     },
+    tagline: { 
+      fontFamily: "Montserrat",
+      marginTop: 150,
+    },
+
+
 }));
 
 const Header = () => {
@@ -21,8 +27,8 @@ const Header = () => {
           <IconButton color="inherit">
               <MenuIcon />
           </IconButton>
-            <Typography variant="h6" className={classes.title}>
-            Blue Berry
+            <Typography className={classes.title}>
+            
           </Typography>
           <IconButton color="inherit">
               <HomeIcon />
@@ -38,14 +44,28 @@ const Header = () => {
           </Toolbar>
           <Divider />
 
-         
+            <Typography className={classes.tagline} >
             <Typography variant="h3" align="center" color="inherit" gutterBottom>
-              Blue Berry
+             Welcome to Blue Berry e-Services Pvt. Ltd.
             </Typography>
 
-            <Typography variant="h5" align="center" color="textPrimary" paragraph>
+            <Typography variant="h6" align="center" color="textPrimary" paragraph>
               We offer services and solutions that empower our customers to embrace technology to grow. 
             </Typography>
+            </Typography>
+            
+
+            <div className="btn">
+            <Button variant="contained" size="large">
+              Our Services
+            </Button>
+
+            </div>
+          
+            
+
+            
+            
           
 
 
