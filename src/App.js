@@ -1,13 +1,15 @@
 import { Container } from "@material-ui/core"
 import Header from "./Components/Header"
-//import Page from "./Components/Page"
 //import Rishav from "./Rishav"
+//import GridCard from "./Components/GridCard"
+
 import './App.css'
 
 const App = () => {
   return (
     <Container>
-      <Header />
+    <Header />
+     {/* <GridCard />*/}
     </Container>
 
   )
