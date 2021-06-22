@@ -5,6 +5,8 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import HomeIcon from '@material-ui/icons/Home';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { Container } from '@material-ui/core';
+import "../App.css"
+
 
 // useStyles Hooks //
 
@@ -19,6 +21,7 @@ const useStyles = makeStyles(() => ({
 
     btn: {
       marginTop: 20,
+      marginBottom: 200,
   }
 
 
@@ -65,6 +68,7 @@ const Header = () => {
          <Typography  className={classes.realtext}
              variant="h2">
               {CurrentValue}
+              <Container>
           <Button className={classes.btn}
              variant="contained" 
              size="large" 
@@ -72,6 +76,7 @@ const Header = () => {
               onClick = {() => {FunCall()}}>
                Our Services
           </Button>
+          </Container>
          </Typography>
 
 
