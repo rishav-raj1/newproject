@@ -4,6 +4,7 @@ import Header from "./Components/Header"
 //import GridCard from "./Components/GridCard"
 import CardItems from "./Components/CardItems"
 import Login from "./Components/Login"
+import Register from "./Components/Register"
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
     <Header />
     <CardItems />
     <Login />
+    <Register />
     </Container>
     
 

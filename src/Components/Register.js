@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Typography, Grid, TextField, Button, Paper } from '@material-ui/core'
+import { Container, Typography, Grid, TextField, Button, Paper, Radio } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core'
 
 
@@ -9,32 +9,31 @@ const useStyles = makeStyles (() => ({
         display: "flex",
         textAlign: 'center',
         justifyContent: 'center',
-        marginTop: 40,
-        marginBottom:90,
+        marginTop: 80,
+        marginBottom: 90,
 
     },
 
     design: {
         padding: 40,
         margin: 20,
-        height: '90vh',
+        height: '110vh',
         width: 320,
         textAlign: 'center',
         justifyContent: 'center',
-        backgroundColor: '#7DF0CC  ',
+        backgroundColor: '#90F982 ',
     },
     btn: {
         marginTop: 20,
-        marginBottom: 60,
+        marginBottom: 40,
     },
-
     txt: {
         fontFamily: "Montserrat",
     },
   
 }))
 
-const Login = () => {
+const Register = () => {
    
     const classes=useStyles();
 
@@ -42,20 +41,30 @@ const Login = () => {
 
         <Grid className={classes.main}>
         <Paper className={classes.design}>
-            <Typography className={classes.txt}
-            variant="h2"
+            <Typography  className={classes.txt}
+            component="h3"
+            variant="h3"
              color="primary">
-               LOGIN
+               REGISTER
             </Typography>
             
                 <TextField 
                 fullWidth
-                placeholder="Enter Your UserName"
+                placeholder="Enter Your First Name"
                 margin="normal"
                 variant="outlined"
                 color="secondary"
-                label="UserName"
+                label="First Name"
                 type="text" />
+
+               <TextField 
+                fullWidth
+                placeholder="Enter Your Last Name"
+                margin="normal"
+                variant="outlined"
+                color="secondary"
+                label="Last Name"
+                type="text" />        
 
                 <TextField 
                 fullWidth
@@ -68,6 +77,15 @@ const Login = () => {
 
                 <TextField 
                 fullWidth
+                placeholder="Enter Your Mobile Number"
+                margin="normal"
+                variant="outlined"
+                color="secondary"
+                label="Mobile Number"
+                type="number" />
+
+                <TextField 
+                fullWidth
                 placeholder="Enter Your Password"
                 margin="normal"
                 variant="outlined"
@@ -75,6 +93,8 @@ const Login = () => {
                 label="Password"
                 type="password"
                  />
+
+
 
                  <Button className={classes.btn}
                  type="submit"
@@ -95,4 +115,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Register
