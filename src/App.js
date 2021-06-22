@@ -3,17 +3,17 @@ import Header from "./Components/Header"
 //import Rishav from "./Rishav"
 //import GridCard from "./Components/GridCard"
 import CardItems from "./Components/CardItems"
+import Login from "./Components/Login"
 
 
 const App = () => {
   return (
-    <div>
     <Container>
     <Header />
-    
-    </Container>
     <CardItems />
-    </div>
+    <Login />
+    </Container>
+    
 
   )
 }

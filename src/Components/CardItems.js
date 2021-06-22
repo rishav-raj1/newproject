@@ -3,7 +3,7 @@ import { Typography, Container, Card, Grid, Divider, Button, CardActions, CardCo
 import { makeStyles } from '@material-ui/styles'
 import "../Components/CardItems.css"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 
     Head: {
         
@@ -13,16 +13,18 @@ const useStyles = makeStyles((theme) => ({
   
       },
 
-
+    main: {
+        marginBottom: 200,
+    },
     
 
-    designimg: {
-      
+    imgmain: {
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-  
-      },
+        textAlign: 'center',
+        justifyContent: 'center',
+       
+
+    },
 
     designcard: {
        textAlign: "center",
@@ -42,15 +44,16 @@ const CardItems = () => {
 
     return (
 
-        <Container>
+        <Container className={classes.main}>
         <Typography className={classes.Head}
         variant="h3" align="center"> Our Services </Typography>
         <Grid container alignItems="center" justify="center" spacing={6}>
         <Grid item sm={3}>
          <Card className={classes.designcard} >
              <CardActionArea >
-             <CardMedia className={classes.designimg} 
+             <CardMedia className={classes.imgmain} 
              image="http://www.blueberryeservices.com/wp-content/uploads/2020/09/training.png" 
+             
              style={{ width:50, height: 50 }}
              />
              <CardContent >
