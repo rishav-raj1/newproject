@@ -21,7 +21,7 @@ const useStyles = makeStyles (() => ({
         width: 320,
         textAlign: 'center',
         justifyContent: 'center',
-        backgroundColor: '#7DF0CC  ',
+        backgroundColor: '#7DF0CC',
     },
     btn: {
         marginTop: 20,
