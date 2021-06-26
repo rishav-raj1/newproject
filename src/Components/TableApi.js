@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container, Typography, Paper, Box, TableContainer, Table, TableBody, TableHead, TableRow, TableCell, TablePagination, } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core'
 import axios from 'axios'
+import ReactToExcel from 'react-html-table-to-excel';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -11,8 +12,18 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         justifyContent: 'center',
         marginTop: 40,
+        marginBottom:20,
+    },
+
+    ebtn: {
+       
+        
+        textAlign: 'center',
+        justifyContent: 'center',
+        marginTop: 40,
         marginBottom:90,
-    }
+    },
+
 }))
 
 const TableApi = () => {
@@ -52,10 +63,20 @@ const TableApi = () => {
 ///////// ----------- ////////////////
 
     return ( 
-        <Container className={classes.menu}>
+        <Container className={classes.ebtn}>
+
+                   <ReactToExcel className="exceldesign"
+                    id="test-table-xls-button"
+                    className="download-table-xls-button"
+                    table="table-to-xls"
+                    filename="tablexls"
+                    sheet="tablexls"
+                    buttonText="Export to Excel"/>
+
+            <Container className={classes.menu}>            
             
             <TableContainer component={Paper}>
-                <Table>
+                <Table id="table-to-xls">
                     <TableHead>
                         <TableRow>
                             <TableCell> Name </TableCell>
@@ -101,6 +122,7 @@ const TableApi = () => {
 
 
            
+        </Container>
         </Container>
         
     )
