@@ -1,11 +1,12 @@
 import { Container } from "@material-ui/core"
-import Header from "./Components/Header"
+//import Header from "./Components/Header"
 //import Rishav from "./Rishav"
 //import GridCard from "./Components/GridCard"
 //import CardItems from "./Components/CardItems"
 //import Login from "./Components/Login"
 //import Register from "./Components/Register"
-import TableApi from "./Components/TableApi"
+//import TableApi from "./Components/TableApi"
+import TableExcel from "./Components/TableExcel"
 
 
 const App = () => {
@@ -14,8 +15,11 @@ const App = () => {
     {/*<Header />
     <CardItems />
     <Login />
-    <Register />*/}
+    <Register />
     <TableApi />
+    */}
+    <TableExcel />
+    
     </Container>
     
 

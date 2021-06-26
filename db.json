@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Rishav",
+      "last_name": "Kumar",
+      "subjectId": 1
+    },
+    {
+      "id": 2,
+      "first_name": "Ujjawal",
+      "last_name": "Kumar",
+      "subjectId": 2
+    },
+    {
+      "id": 3,
+      "first_name": "Rishu",
+      "last_name": "Raj",
+      "subjectId": 1
+    },
+    {
+      "first_name": "Anshu",
+      "last_name": "Kumar",
+      "subjectId": 2,
+      "id": 5
+    },
+    {
+      "first_name": "Bittu",
+      "last_name": "Kumar",
+      "subjectId": 3,
+      "id": 6
+    }
+  ]
+}
