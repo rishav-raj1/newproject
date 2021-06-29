@@ -5,8 +5,10 @@ import { Container } from "@material-ui/core"
 //import CardItems from "./Components/CardItems"
 //import Login from "./Components/Login"
 //import Register from "./Components/Register"
-import TableApi from "./Components/TableApi"
+//import TableApi from "./Components/TableApi"
 //import TableExcel from "./Components/TableExcel"
+//import Datacvs from "./RestAPI/Datacvs"
+import Hooks from "./Practical/Hooks"
 
 
 const App = () => {
@@ -17,8 +19,10 @@ const App = () => {
     <Login />
     <Register />
     <TableExcel />
+    <Datacvs />
     */}
-    <TableApi />
+    <Hooks />
+    
     
     
     </Container>
