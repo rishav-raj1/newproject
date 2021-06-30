@@ -8,7 +8,8 @@ import { Container } from "@material-ui/core"
 //import TableApi from "./Components/TableApi"
 //import TableExcel from "./Components/TableExcel"
 //import Datacvs from "./RestAPI/Datacvs"
-import Hooks from "./Practical/Hooks"
+//import Hooks from "./Practical/Hooks"
+import Get from "./RestAPI/Get"
 
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
     <TableExcel />
     <Datacvs />
     */}
-    <Hooks />
+    <Get />
     
     
     
