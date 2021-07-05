@@ -21,9 +21,9 @@ const Get = () => {
            <thead>
               <tr>
                   <th>Id</th>
-                  <th>FirstName</th>
-                  <th>LastName</th>
-                  <th>Age</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Mobile</th>
               </tr>
            </thead>
            <tbody>
@@ -32,9 +32,9 @@ const Get = () => {
                data.map((item)=>
                <tr>
                   <td>{item.id}</td>
-                  <td>{item.first_name}</td>
-                  <td>{item.last_name}</td>
-                  <td>{item.age}</td>
+                  <td>{item.name}</td>
+                  <td>{item.email}</td>
+                  <td>{item.mobile}</td>
               </tr>
                )
            }

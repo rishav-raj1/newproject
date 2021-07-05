@@ -10,6 +10,7 @@ import { Container } from "@material-ui/core"
 //import Datacvs from "./RestAPI/Datacvs"
 //import Hooks from "./Practical/Hooks"
 import Get from "./RestAPI/Get"
+import Post from "./RestAPI/Post"
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
     <TableExcel />
     <Datacvs />
     */}
+    <Post />
     <Get />
     
     
